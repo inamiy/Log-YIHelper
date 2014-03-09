@@ -20,6 +20,7 @@
 #   define LOG_RECT(rect)   NSLog(@"%s x=%.2f, y=%.2f, w=%.2f, h=%.2f", #rect, rect.origin.x, rect.origin.y, rect.size.width, rect.size.height);
 #   define LOG_POINT(pt)    NSLog(@"%s x=%.2f, y=%.2f", #pt, pt.x, pt.y);
 #   define LOG_SIZE(size)   NSLog(@"%s w=%.2f, h=%.2f", #size, size.width, size.height);
+#   define LOG_INSETS(insets)   NSLog(@"%s top=%.2f, left=%.2f, bottom=%.2f, right=%.2f", #insets, insets.top, insets.left, insets.bottom, insets.right);
 #   define LOG_RANGE(range) NSLog(@"%s loc=%d, len=%d", #range, range.location, range.length);
 #   define LOG_TRANSFORM(transform)     NSLog(@"%s = %@", #transform, NSStringFromCGAffineTransform(transform));
 #   define LOG_TRANSFORM3D(transform3D) NSLog(@"%s =\n%f %f %f %f\n%f %f %f %f\n%f %f %f %f\n%f %f %f %f\n\n",#transform3D,transform3D.m11,transform3D.m12,transform3D.m13,transform3D.m14,transform3D.m21,transform3D.m22,transform3D.m23,transform3D.m24,transform3D.m31,transform3D.m32,transform3D.m33,transform3D.m34,transform3D.m41,transform3D.m42,transform3D.m43,transform3D.m44);
@@ -48,6 +49,7 @@
 #   define LOG_RECT(rect)   ;
 #   define LOG_POINT(pt)    ;
 #   define LOG_SIZE(size)   ;
+#   define LOG_INSETS(insets)   ;
 #   define LOG_RANGE(range) ;
 #   define LOG_TRANSFORM(transform)     ;
 #   define LOG_TRANSFORM3D(transform3D) ;
